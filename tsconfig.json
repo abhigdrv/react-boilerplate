@@ -39,9 +39,14 @@
     },
 
     /* Type checking */
-    "types": ["vite/client", "@testing-library/jest-dom", "vitest/globals", "node"]
+    "types": [
+      "vite/client",
+      "@testing-library/jest-dom",
+      "vitest/globals",
+      "node"
+    ]
   },
-  "include": ["src", "vite.config.ts"],
+  "include": ["src"],
   "exclude": ["node_modules", "dist", "build"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
