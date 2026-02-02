@@ -1,5 +1,11 @@
 import { useTranslation } from 'react-i18next';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/Card';
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from '@/components/ui/Card';
 import { usePosts } from '@/services/postService';
 import LoadingSpinner from '@/components/common/LoadingSpinner';
 import { Counter } from '@/features/counter';
@@ -49,9 +55,7 @@ export default function HomePage() {
           <Card>
             <CardHeader>
               <CardTitle>Zustand</CardTitle>
-              <CardDescription>
-                Lightweight state management
-              </CardDescription>
+              <CardDescription>Lightweight state management</CardDescription>
             </CardHeader>
           </Card>
           <Card>
@@ -65,31 +69,31 @@ export default function HomePage() {
           <Card>
             <CardHeader>
               <CardTitle>Vitest</CardTitle>
-              <CardDescription>
-                Fast unit testing with great DX
-              </CardDescription>
+              <CardDescription>Fast unit testing with great DX</CardDescription>
             </CardHeader>
           </Card>
           <Card>
             <CardHeader>
               <CardTitle>Playwright</CardTitle>
-              <CardDescription>
-                Reliable end-to-end testing
-              </CardDescription>
+              <CardDescription>Reliable end-to-end testing</CardDescription>
             </CardHeader>
           </Card>
         </div>
       </div>
 
       <div className="mb-8">
-        <h2 className="mb-4 text-2xl font-semibold">Live Demo - Counter (Zustand)</h2>
+        <h2 className="mb-4 text-2xl font-semibold">
+          Live Demo - Counter (Zustand)
+        </h2>
         <div className="flex justify-center">
           <Counter />
         </div>
       </div>
 
       <div>
-        <h2 className="mb-4 text-2xl font-semibold">Example Posts (React Query)</h2>
+        <h2 className="mb-4 text-2xl font-semibold">
+          Example Posts (React Query)
+        </h2>
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {posts?.slice(0, 6).map((post) => (
             <Card key={post.id}>

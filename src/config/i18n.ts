@@ -26,7 +26,8 @@ const resources = {
   es: {
     translation: {
       welcome: 'Bienvenido a React Boilerplate',
-      description: 'Una plantilla moderna de React lista para producción con TypeScript',
+      description:
+        'Una plantilla moderna de React lista para producción con TypeScript',
       theme: {
         toggle: 'Cambiar tema',
         light: 'Modo claro',

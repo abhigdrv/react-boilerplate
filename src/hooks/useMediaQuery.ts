@@ -8,7 +8,7 @@ export function useMediaQuery(query: string): boolean {
 
   useEffect(() => {
     const media = window.matchMedia(query);
-    
+
     // Set initial value
     if (media.matches !== matches) {
       setMatches(media.matches);
@@ -16,7 +16,7 @@ export function useMediaQuery(query: string): boolean {
 
     // Create listener
     const listener = (e: MediaQueryListEvent) => setMatches(e.matches);
-    
+
     // Add listener
     media.addEventListener('change', listener);
 
@@ -29,5 +29,6 @@ export function useMediaQuery(query: string): boolean {
 
 // Common breakpoint hooks
 export const useIsMobile = () => useMediaQuery('(max-width: 768px)');
-export const useIsTablet = () => useMediaQuery('(min-width: 769px) and (max-width: 1024px)');
+export const useIsTablet = () =>
+  useMediaQuery('(min-width: 769px) and (max-width: 1024px)');
 export const useIsDesktop = () => useMediaQuery('(min-width: 1025px)');

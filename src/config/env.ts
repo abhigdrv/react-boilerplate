@@ -7,7 +7,8 @@ export const env = {
 
 // API configuration
 export const apiConfig = {
-  baseURL: import.meta.env.VITE_API_BASE_URL || 'https://jsonplaceholder.typicode.com',
+  baseURL:
+    import.meta.env.VITE_API_BASE_URL || 'https://jsonplaceholder.typicode.com',
   timeout: Number(import.meta.env.VITE_API_TIMEOUT) || 30000,
 } as const;
 

@@ -23,7 +23,10 @@ export default function ErrorFallback({
         </div>
         <div className="flex justify-center gap-4">
           <Button onClick={resetErrorBoundary}>{t('error.retry')}</Button>
-          <Button variant="outline" onClick={() => (window.location.href = '/')}>
+          <Button
+            variant="outline"
+            onClick={() => (window.location.href = '/')}
+          >
             {t('error.goHome')}
           </Button>
         </div>
